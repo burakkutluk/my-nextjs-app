@@ -101,7 +101,9 @@ const AddModal = ({ isOpen, onClose, setOpen, handleAddTask }: AddModalProps) =>
 					placeholder="Description"
 					className="w-full h-12 px-3 outline-none rounded-md bg-slate-100 border border-slate-300 text-sm font-medium"
 				/>
+				<label htmlFor="priority" className="text-sm font-medium">Priority:</label>
 				<select
+					id="priority"
 					name="priority"
 					onChange={handleChange}
 					value={taskData.priority}
@@ -165,9 +167,13 @@ const AddModal = ({ isOpen, onClose, setOpen, handleAddTask }: AddModalProps) =>
 						placeholder="Image Alt"
 						className="w-full h-12 px-3 outline-none rounded-md bg-slate-100 border border-slate-300 text-sm"
 					/>
+					<label htmlFor="image" className="sr-only">Upload Image</label>
 					<input
 						type="file"
 						name="image"
+						id="image"
+						title="Upload Image"
+						placeholder="Upload Image"
 						onChange={handleImageChange}
 						className="w-full"
 					/>

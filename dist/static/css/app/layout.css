@@ -504,6 +504,17 @@ video {
 [hidden] {
   display: none;
 }
+.sr-only{
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
 .fixed{
   position: fixed;
 }
@@ -789,11 +800,11 @@ video {
 .pl-2{
   padding-left: 0.5rem;
 }
-.pr-6{
-  padding-right: 1.5rem;
-}
 .pl-\[60px\]{
   padding-left: 60px;
+}
+.pr-6{
+  padding-right: 1.5rem;
 }
 .pr-\[20px\]{
   padding-right: 20px;
@@ -990,16 +1001,5 @@ body::before {
     font-size: 1.125rem;
     line-height: 1.75rem;
   }
-}
-
-/*!*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[3].use[1]!./node_modules/next/dist/build/webpack/loaders/next-font-loader/index.js??ruleSet[1].rules[14].oneOf[3].use[2]!./node_modules/next/font/local/target.css?{"path":"src\\app\\layout.tsx","import":"","arguments":[{"src":"./fonts/GeistVF.woff"}],"variableName":"geistSans"} ***!
-  \*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
-@font-face {
-font-family: '__geistSans_ef23df';
-src: url(/_next/static/media/4473ecc91f70f139-s.p.woff) format('woff');
-font-display: swap;
-}@font-face {font-family: '__geistSans_Fallback_ef23df';src: local("Arial");ascent-override: 85.83%;descent-override: 20.52%;line-gap-override: 9.33%;size-adjust: 107.19%
-}.__className_ef23df {font-family: '__geistSans_ef23df', '__geistSans_Fallback_ef23df'
 }
 

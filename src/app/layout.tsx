@@ -1,17 +1,20 @@
-// src/app/layout.js
-import StyledComponentsRegistry from './lib/registry'
-import localFont from "next/font/local"
+import type { Metadata } from 'next'
 import "./globals.css"
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-})
-
-export default function RootLayout({ children }) {
+export const metadata: Metadata = {
+  title: 'My App',
+  description: 'My App is a...',
+}
+ 
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode
+}) {
   return (
     <html lang="en">
-      <body className={geistSans.className}>
-        <StyledComponentsRegistry>{children}</StyledComponentsRegistry>
+      <body>
+        <div id="root">{children}</div>
       </body>
     </html>
   )
