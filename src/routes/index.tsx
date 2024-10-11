@@ -1,6 +1,6 @@
 import { RouteObject } from "react-router";
-import Layout from "../layout";
-import Boards from "../pages/Boards";
+import Layout from "../app/layout";
+import Board from "../Board";
 
 const routes: RouteObject[] = [
 	{
@@ -11,7 +11,7 @@ const routes: RouteObject[] = [
 				children: [
 					{
 						path: "",
-						element: <Boards />,
+						element: <Board />,
 					},
 				],
 			},
